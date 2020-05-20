@@ -1,0 +1,15 @@
+email,subject,message
+{%extend "database.html" %}
+{%block content%}
+srsivaragul@gmail.com,HELLO,aaaaaaaas
+srsivaragul@gmail.com,HELLO,LLL
+nithya411999@gmail.com,aa,lklkl
+nithya411999@gmail.com,aa,lklkl
+rashigad@gmail.com,HELLO,kolp
+12@gmail.com,HELLO,kkjj
+nithya411999@gmail.com,aa,asss
+srsivaragul@gmail.com,hi,LLKPO
+{% block content %}
+srsivaragul@gmail.com,HELLO,one
+srsivaragul@gmail.com,HELLO,amdm
+nithya411999@gmail.com,hello.,akfkdsnfkds
