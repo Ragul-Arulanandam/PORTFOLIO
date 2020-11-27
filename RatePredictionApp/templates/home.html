@@ -1,0 +1,76 @@
+<html>
+<body>
+    <style>
+   
+     h1 {
+         break: always;
+         padding:20px;
+         text-align: center;
+        font-family: "Times New Roman";
+        background-color: skyblue;
+        background-size: 100px ;
+        background-repeat: no-repeat; 
+        padding:20px;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+@keyframes example {
+    0%   {background-color: lightred;}
+    25%  {background-color: lightyellow;}
+    50%  {background-color: skyblue;}
+    100% {background-color: lightgreen;}
+}
+.buttons {
+   margin-left: 40%;
+    background-size: 10px;
+    background-color: #FF1493; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    }
+    .icon-bar a {
+
+  float: left;
+  width: 100px;
+  text-align: center;
+  background-size:100px;
+  padding: 12px 10px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 30px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+     </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="icon-bar">
+    <a class="active" href="#"><i class="fa fa-home"></i></a>
+    <a href="#"><i class="fa fa-search"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-trash"></i></a>
+     <h1>
+            PRICE PREDICTION  SEARCH ENGINE 
+        </h1>
+    </div>
+    <br>
+    <div class = "buttons">
+       
+        <a href="{{url_for('chennai')}}">CHENNAI</a>
+        <a href="{{url_for('bangalore')}}">BANGALORE</a>
+        </div>
+
+    </style>
+        </form>
+    </body>
+</html>

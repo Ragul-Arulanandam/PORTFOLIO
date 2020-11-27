@@ -1,0 +1,81 @@
+<html>
+<body>
+    <style>
+   
+     h1 {
+     border: 1px skyblue;
+     padding: 30px;
+     text-align: center;
+     font-family: "Times New Roman";
+     background-color: skyblue;
+     background-size: 200px ;
+     background-repeat: no-repeat;
+     background-position: right;
+     animation-name: example;
+     animation-duration: 4s;
+     animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {background-color: lightred;}
+    25%  {background-color: lightyellow;}
+    50%  {background-color: skyblue;}
+    100% {background-color: lightgreen;}
+}
+#style{
+        margin: auto;
+        border: 2px  black;
+        background-image: url(static/assets/fullbg.jpeg);
+        font-color: white;
+        borderstyle: solid;
+        width: 600px;
+        padding: 30px;
+    }
+#content{
+        font-color: black;
+        font-family: "Aerial";
+        text-align: left;
+        padding: 10px;
+        border-width: 5px;
+        font-weight: Bold;
+        color: white;
+
+    }
+    
+     </style>
+        <h1>
+            PRICE PREDICTION  SEARCH ENGINE 
+        </h1>
+    </style>
+    </style>
+    <div id='style'>
+        <form method="POST", action="{{url_for('test')}}">
+            </fieldset>
+                <div id ="content">
+                {{form.AREA.label()}}
+                <select name="comp_select" class="selectpicker form-control">
+                {% for o in data.Area_Names1.keys() %}
+                    <option value="{{ o }}">{{ o }}</option>
+                {% endfor %}
+                </select>
+                </div>
+                <div id="content">
+                    {{ form.INTSQFT.label() }}
+                    {{ form.INTSQFT() }}
+                </div>
+                <div id="content">
+                    {{ form.BHK.label() }}
+                    {{ form.BHK() }}
+                </div>
+                <div id="content">
+                    {{ form.BATHROOMS.label() }}
+                    {{ form.BATHROOMS() }}
+                </div>
+                <br/>
+                <div id="content">
+                    {{ form.PREDICT() }}
+                </div>
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
